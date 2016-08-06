@@ -14,11 +14,13 @@ output.addEventListener("click", output);
 
 
 function userinput() {
-
+  output.innerHTML
+  console.log(output)
 }
 
 function add(c,d) {
-  var added = input1 + input2
+  var added = input1.value + input2.value
+  output.innerHTML;
   console.log("clicked add", add)
 }
 
@@ -33,3 +35,5 @@ function multiply() {
 function divide() {
   console.log("clicked divide")
 }
+
+output.innerHTML;
