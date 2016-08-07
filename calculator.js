@@ -1,6 +1,3 @@
-// var input1 = document.getElementById("user1");
-// var input2 = document.getElementById("user2");
-var output = document.getElementById("output");
 var addBtn = document.getElementById("add");
 var subtractBtn = document.getElementById("subtract");
 var multiplyBtn = document.getElementById("multiply");
@@ -16,25 +13,30 @@ output.addEventListener("click", output);
 function add(user1, user2) {
   var input1 = parseInt(document.getElementById("user1").value);
   var input2 = parseInt(document.getElementById("user2").value);
-  console.log(input1 + input2);
+  var answer = document.getElementById("output")
+  output.value = (input1 + input2);
 }
 
 function subtract(user1, user2) {
   var input1 = parseInt(document.getElementById("user1").value);
   var input2 = parseInt(document.getElementById("user2").value);
-  console.log(input1 - input2);
+  var output = document.getElementById("output");
+  output.value = (input1 - input2);
+
 }
 
 function multiply(user1, user2) {
   var input1 = parseInt(document.getElementById("user1").value);
   var input2 = parseInt(document.getElementById("user2").value);
-  console.log(input1 * input2);
+  var output = document.getElementById("output");
+  output.value = (input1 * input2);
 }
 
 function divide(user1, user2) {
   var input1 = parseInt(document.getElementById("user1").value);
   var input2 = parseInt(document.getElementById("user2").value);
-  console.log(input1 / input2);
+  var output = document.getElementById("output");
+  output.value = (input1 / input2);
 }
 
 
