@@ -1,5 +1,5 @@
-var input1 = document.getElementById("user1");
-var input2 = document.getElementById("user2");
+// var input1 = document.getElementById("user1");
+// var input2 = document.getElementById("user2");
 var output = document.getElementById("output");
 var addBtn = document.getElementById("add");
 var subtractBtn = document.getElementById("subtract");
@@ -13,27 +13,29 @@ divideBtn.addEventListener("click", divide);
 output.addEventListener("click", output);
 
 
-function userinput() {
-  output.innerHTML
-  console.log(output)
+function add(user1, user2) {
+  var input1 = parseInt(document.getElementById("user1").value);
+  var input2 = parseInt(document.getElementById("user2").value);
+  console.log(input1 + input2);
 }
 
-function add(c,d) {
-  var added = input1.value + input2.value
-  output.innerHTML;
-  console.log("clicked add", add)
+function subtract(user1, user2) {
+  var input1 = parseInt(document.getElementById("user1").value);
+  var input2 = parseInt(document.getElementById("user2").value);
+  console.log(input1 - input2);
 }
 
-function subtract() {
-  console.log("clicked subtract")
+function multiply(user1, user2) {
+  var input1 = parseInt(document.getElementById("user1").value);
+  var input2 = parseInt(document.getElementById("user2").value);
+  console.log(input1 * input2);
 }
 
-function multiply() {
-  console.log("clicked multiply")
+function divide(user1, user2) {
+  var input1 = parseInt(document.getElementById("user1").value);
+  var input2 = parseInt(document.getElementById("user2").value);
+  console.log(input1 / input2);
 }
 
-function divide() {
-  console.log("clicked divide")
-}
 
-output.innerHTML;
+
