@@ -3,21 +3,29 @@
 <head>
   <meta charset="utf-8">
   <title>Spa-Calculator</title>
-  <!-- <link rel="stylesheet" type="text/css" href="main.css"> -->
+  <link rel="stylesheet" type="text/css" href="main.css">
 
 </head>
 
 <body>
+<div class="container">
+<div class="wrapper">
+<input type="text" id="user1" placeholder="Enter First Number"></br>
+<input type="text" id="user2" placeholder="Enter Second Number"></br>
 
-<input type="text" id="user1">
-<input type="text" id="user2">
+<!-- <div class="btns-middle"> -->
+<button class="btns-middle" id="add">ADD</button>
+<button class="btns-middle" id="subtract">SUBTR</button>
+<button class="btns-middle" id="multiply">MULTI</button>
+<button class="btns-middle" id="divide">DIVIDE</button>
+<!-- </div> -->
 
-<button id="add">+</button>
-<button id="subtract">-</button>
-<button id="multiply">*</button>
-<button id="divide">/</button> =
-
-<input type="text" name="answer" id="output">
+<input type="text" name="answer" id="output" placeholder="Answer">
+</div>
+</div>
   <script src="calculator.js"></script>
 </body>
 </html>
+
+
+

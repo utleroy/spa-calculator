@@ -37,7 +37,13 @@ function divide(user1, user2) {
   var input2 = parseInt(document.getElementById("user2").value);
   var output = document.getElementById("output");
   output.value = (input1 / input2);
+  console.log(output.value)
 }
+
+
+
+
+
 
 
 
